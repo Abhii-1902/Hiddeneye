@@ -142,8 +142,8 @@ def start_ngrok(port):
     print(localization.lang_start_ngrok["send_this_url_suggestion"])
     print(localization.lang_start_localhost["localhost_url"] +
             "127.0.0.1:" + port)
-    print(localization.lang_start_ngrok["ngrok_url"] +
-            ngrokController.ngrok_url)
+    print(str(localization.lang_start_ngrok["ngrok_url"]) +
+            str(ngrokController.ngrok_url))
 
 
 def start_serveo(port):
